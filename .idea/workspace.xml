@@ -1,150 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64a33dc8-a11f-4039-a9b3-d8e8b4301004" name="Default" comment="提交">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/ClientDemo.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/GdiPlus.lib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCCore.lib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDK.lib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCAlarm.lib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCGeneralCfgMgr.lib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCPreview.lib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/LocalXml.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/PlayCtrl.lib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/DHNetSDK.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/DHNetSDK.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/netsdk_1_0_demo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/ImageAlg.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/Infra.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/IvsDrawer.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/Json.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/NetFramework.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/Stream.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/StreamSvr.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/avnetsdk.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/dhconfigsdk.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/dhnetsdk.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/dhplay.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/fisheye.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/libcurl.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/libeay32.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/win64/ssleay32.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/AudioRender.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/ClientDemoDll/ReadMe.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/ClientDemoDll/calib.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/ClientDemoDll/iconv.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/ClientDemoDll/libxml2.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/ClientDemoDll/zlib1.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/EagleEyeRender.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/GdiPlus.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCCore.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDK.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/AnalyzeData.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/AudioIntercom.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCAlarm.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCCoreDevCfg.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCDisplay.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCGeneralCfgMgr.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCIndustry.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCPlayBack.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCPreview.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCVoiceTalk.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/OpenAL32.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/StreamTransClient.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/SystemTransform.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/libiconv2.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/HXVA.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/MP_Render.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/NPQos.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/PlayCtrl.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/SuperRender.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/YUVProcess.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/hlog.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/hpr.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/libeay32.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/libmmd.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/log4cxx.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/库文件/ssleay32.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-12_15-02-22.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-12_15-02-47.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-12_15-11-15.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-12_15-20-39.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-12_15-22-40.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-12_15-24-16.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-12_15-27-09.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-12_15-27-52.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-12_15-30-06.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-19_17-57-57.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-19_18-04-22.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/TestDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/common/FaceDevDelete.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/common/FaceDevIssued.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/common/impl/FaceDevDeleteImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/common/impl/FaceDevIssuedImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/core/FaceCore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/core/HCNetSDKCore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/data/Constant.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/1025595122a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/1025595122a.pub" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/app.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/error.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mvnw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mvnw.cmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/lib.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/FaceDevDelete.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/FaceDevIssued.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/controller/ModularFace.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/data/Constants.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/AccessRecord.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/DeviceRelated.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/Devices.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/FaceReceive.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/FaceReceiveKey.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/PingTelnetInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/PingTelnetInfoKey.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/TbCompanyUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/TbVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/TowerInfor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/responseModel/GetCompanyUserScheduleModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/responseModel/GetStaffScheduleDataResponseModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/responseModel/GetStaffScheduleResponseParentModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/responseModel/GetStaffScheduleVerifyResponseModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/entity/responseModel/GetStaffScheduleVisitorResponseModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/repository/DevRelatedRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/repository/DevicesRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/repository/FaceReceiveRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/repository/PTinfoRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/repository/TbCompanyUserRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/repository/TowerInforRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/AccessRecordService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/DevRelatedService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/DevicesService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/FaceReceiveService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/HCNetSDKService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/PTinfoService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/TbCompanyUserService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/TbVisitorService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/TowerInforService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/impl/DevRelatedServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/impl/DevicesServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/impl/FaceReceiveServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/impl/HCNetSDKServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/impl/PTinfoServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/impl/TbCompanyUserServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/service/impl/TowerInforServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/MyErrorException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/RedisUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/uppermac/ShangweijiApplicationTests.java" afterPath="" />
+    <list default="true" id="64a33dc8-a11f-4039-a9b3-d8e8b4301004" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/config/HCNetSDK.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/config/HCNetSDK.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/Base64_2.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/Base64_2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/FilesUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/FilesUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/HttpUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/HttpUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/MyLog.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/MyLog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/OkHttpUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/OkHttpUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/SSLClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/utils/SSLClient.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../photoIssued/target/" />
@@ -229,8 +87,8 @@
       <file leaf-file-name="Constant.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/uppermac/data/Constant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="288">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -486,7 +344,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/leil/DHNetSDK/target/DHNetSDK/DHNetSDK.jar!/" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -798,8 +656,16 @@
       <workItem from="1576661098984" duration="3943000" />
       <workItem from="1576719815416" duration="1607000" />
       <workItem from="1576745337344" duration="3306000" />
-      <workItem from="1576749082890" duration="1428000" />
+      <workItem from="1576749082890" duration="2387000" />
     </task>
+    <task id="LOCAL-00001" summary="提交">
+      <created>1576750894332</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576750894332</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -835,7 +701,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257266000" />
+    <option name="totallyTimeSpent" value="258225000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -848,6 +714,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -863,7 +730,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3237519" sideWeight="0.49344262" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3237519" sideWeight="0.49344262" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1041,6 +908,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1077,6 +945,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1172,8 +1041,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/uppermac/data/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="16" column="42" lean-forward="true" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="288">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
