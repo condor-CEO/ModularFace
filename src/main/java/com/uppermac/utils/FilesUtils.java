@@ -1,16 +1,9 @@
 package com.uppermac.utils;
 
-import java.io.BufferedOutputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.imageio.stream.FileImageInputStream;
-
-import org.apache.commons.lang3.StringUtils;
+import java.io.*;
 
 public class FilesUtils {
 	/**
@@ -55,7 +48,7 @@ public class FilesUtils {
 			if (StringUtils.isBlank(fileName)) {
 				ret = new File(outputFile);
 			} else {
-				ret = new File(outputFile +"\\"+ fileName);
+				ret = new File(outputFile +"/"+ fileName);
 			}
 			File fileParent = ret.getParentFile();
 		

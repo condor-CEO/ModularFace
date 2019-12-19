@@ -1,7 +1,6 @@
 package com.uppermac.utils;
 
 import java.io.ByteArrayOutputStream;
-import java.io.UnsupportedEncodingException;
 
 public class Base64_2 {
 	private static char[] base64EncodeChars = new char[] { 'A', 'B', 'C', 'D',

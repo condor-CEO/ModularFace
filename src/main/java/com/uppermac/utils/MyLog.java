@@ -1,25 +1,18 @@
 package com.uppermac.utils;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-
-import com.uppermac.service.TowerInforService;
 
 public class MyLog {
 
 	private Logger logger;
 	
 	private Class<?> className;
-
-	@Autowired
-	private TowerInforService towerInforService;
-	
 	
 	public MyLog( Class<?> className) {
 		super();

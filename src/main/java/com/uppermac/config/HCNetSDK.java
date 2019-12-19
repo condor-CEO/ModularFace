@@ -2739,7 +2739,7 @@ public static final int NET_DVR_LOGIN_USERNAME_MAX_LEN = 64;
 public static final int NET_DVR_LOGIN_PASSWD_MAX_LEN = 64;
 
  public static interface FLoginResultCallBack extends Callback{
-    	public int invoke(int lUserID, int dwResult, NET_DVR_DEVICEINFO_V30 lpDeviceinfo, Pointer pUser);
+    	public int invoke(int lUserID,int dwResult,NET_DVR_DEVICEINFO_V30 lpDeviceinfo,Pointer pUser);
 }
  
 //NET_DVR_Login_V40()参数
@@ -4633,7 +4633,7 @@ public static class BYTE_ARRAY extends Structure
  /***API函数声明,详细说明见API手册***/
    public static interface FRealDataCallBack_V30 extends Callback {
         public void invoke(int lRealHandle, int dwDataType,
-                           ByteByReference pBuffer, int dwBufSize, Pointer pUser);
+                ByteByReference pBuffer, int dwBufSize, Pointer pUser);
     }
 
    public static interface FMSGCallBack extends Callback {
@@ -4645,34 +4645,34 @@ public static class BYTE_ARRAY extends Structure
     }
 
    public static interface FMessCallBack extends Callback {
-        public boolean invoke(int lCommand, String sDVRIP, String pBuf, int dwBufLen);
+        public boolean invoke(int lCommand,String sDVRIP,String pBuf,int dwBufLen);
     }
 
    public static interface FMessCallBack_EX extends Callback {
-        public boolean invoke(int lCommand, int lUserID, String pBuf, int dwBufLen);
+        public boolean invoke(int lCommand,int lUserID,String pBuf,int dwBufLen);
     }
 
    public static interface FMessCallBack_NEW extends Callback {
-        public boolean invoke(int lCommand, String sDVRIP, String pBuf, int dwBufLen, short dwLinkDVRPort);
+        public boolean invoke(int lCommand,String sDVRIP,String pBuf,int dwBufLen, short dwLinkDVRPort);
     }
 
    public static interface FMessageCallBack extends Callback {
-        public boolean invoke(int lCommand, String sDVRIP, String pBuf, int dwBufLen, int dwUser);
+        public boolean invoke(int lCommand,String sDVRIP,String pBuf,int dwBufLen, int dwUser);
     }
 
       public static interface FExceptionCallBack extends Callback {
         public void invoke(int dwType, int lUserID, int lHandle, Pointer pUser);
     }
       public static interface FDrawFun extends Callback {
-        public void invoke(int lRealHandle, W32API.HDC hDc, int dwUser);
+        public void invoke(int lRealHandle,W32API.HDC hDc,int dwUser);
       }
 
     public static interface FStdDataCallBack extends Callback {
-        public void invoke(int lRealHandle, int dwDataType, ByteByReference pBuffer, int dwBufSize, int dwUser);
+        public void invoke(int lRealHandle, int dwDataType, ByteByReference pBuffer,int dwBufSize,int dwUser);
       }
 
     public static interface FPlayDataCallBack extends Callback {
-        public void invoke(int lPlayHandle, int dwDataType, ByteByReference pBuffer, int dwBufSize, int dwUser);
+        public void invoke(int lPlayHandle, int dwDataType, ByteByReference pBuffer,int dwBufSize,int dwUser);
       }
 
     public static interface FVoiceDataCallBack extends Callback {
@@ -4680,7 +4680,7 @@ public static class BYTE_ARRAY extends Structure
       }
 
     public static interface FVoiceDataCallBack_V30 extends Callback {
-        public void invoke(int lVoiceComHandle, String pRecvDataBuffer, int dwBufSize, byte byAudioFlag, Pointer pUser);
+        public void invoke(int lVoiceComHandle, String pRecvDataBuffer, int dwBufSize, byte byAudioFlag,Pointer pUser);
       }
 
     public static interface FVoiceDataCallBack_MR extends Callback {
@@ -4696,23 +4696,23 @@ public static class BYTE_ARRAY extends Structure
       }
 
    public static interface FSerialDataCallBack extends Callback {
-        public void invoke(int lSerialHandle, String pRecvDataBuffer, int dwBufSize, int dwUser);
+        public void invoke(int lSerialHandle,String pRecvDataBuffer,int dwBufSize,int dwUser);
       }
 
     public static interface FRowDataCallBack extends Callback {
-        public void invoke(int lUserID, String sIPAddr, int lRowAmout, String pRecvDataBuffer, int dwBufSize, int dwUser);
+        public void invoke(int lUserID,String  sIPAddr, int lRowAmout, String pRecvDataBuffer,int dwBufSize,int dwUser);
       }
 
     public static interface FColLocalDataCallBack extends Callback {
-        public void invoke(int lUserID, String sIPAddr, int lColumnAmout, String pRecvDataBuffer, int dwBufSize, int dwUser);
+        public void invoke(int lUserID, String sIPAddr, int lColumnAmout, String pRecvDataBuffer,int dwBufSize,int dwUser);
       }
 
      public static interface FColGlobalDataCallBack extends Callback {
-        public void invoke(int lUserID, String sIPAddr, int lColumnAmout, String pRecvDataBuffer, int dwBufSize, int dwUser);
+        public void invoke(int lUserID, String sIPAddr, int lColumnAmout, String pRecvDataBuffer,int dwBufSize,int dwUser);
       }
 
    public static interface FJpegdataCallBack extends Callback {
-        public int invoke(int lCommand, int lUserID, String sDVRIP, String sJpegName, String pJpegBuf, int dwBufLen, int dwUser);
+        public int invoke(int lCommand, int lUserID, String sDVRIP, String sJpegName, String pJpegBuf,int dwBufLen, int dwUser);
       }
 
     public static interface FPostMessageCallBack extends Callback {
@@ -4725,7 +4725,7 @@ public static class BYTE_ARRAY extends Structure
  boolean  NET_DVR_SetSDKLocalCfg(int enumType, Pointer lpInBuff);
  boolean  NET_DVR_GetSDKLocalCfg(int enumType, Pointer lpOutBuff);
  
- boolean  NET_DVR_SetDVRMessage(int nMessage, int hWnd);
+ boolean  NET_DVR_SetDVRMessage(int nMessage,int hWnd);
 //NET_DVR_SetDVRMessage的扩展
  boolean  NET_DVR_SetExceptionCallBack_V30(int nMessage, int hWnd, FExceptionCallBack fExceptionCallBack, Pointer pUser);
 
@@ -4737,77 +4737,77 @@ public static class BYTE_ARRAY extends Structure
  boolean  NET_DVR_SetDVRMessageCallBack_V30(FMSGCallBack fMessageCallBack, Pointer pUser);
  boolean  NET_DVR_SetDVRMessageCallBack_V31(FMSGCallBack_V31 fMessageCallBack, Pointer pUser);
 
- boolean  NET_DVR_SetConnectTime(int dwWaitTime, int dwTryTimes);
- boolean  NET_DVR_SetReconnect(int dwInterval, boolean bEnableRecon);
+ boolean  NET_DVR_SetConnectTime(int dwWaitTime, int dwTryTimes );
+ boolean  NET_DVR_SetReconnect(int dwInterval, boolean bEnableRecon );
  int  NET_DVR_GetSDKVersion();
  int  NET_DVR_GetSDKBuildVersion();
  int  NET_DVR_IsSupport();
- boolean  NET_DVR_StartListen(String sLocalIP, short wLocalPort);
+ boolean  NET_DVR_StartListen(String sLocalIP,short wLocalPort);
  boolean  NET_DVR_StopListen();
 
- int  NET_DVR_StartListen_V30(String sLocalIP, short wLocalPort, FMSGCallBack DataCallback, Pointer pUserData);
+ int  NET_DVR_StartListen_V30(String sLocalIP, short wLocalPort, FMSGCallBack DataCallback , Pointer pUserData );
  boolean  NET_DVR_StopListen_V30(int lListenHandle);
- int  NET_DVR_Login(String sDVRIP, short wDVRPort, String sUserName, String sPassword, NET_DVR_DEVICEINFO lpDeviceInfo);
+ int  NET_DVR_Login(String sDVRIP,short wDVRPort,String sUserName,String sPassword,NET_DVR_DEVICEINFO lpDeviceInfo);
  int  NET_DVR_Login_V30(String sDVRIP, short wDVRPort, String sUserName, String sPassword, NET_DVR_DEVICEINFO_V30 lpDeviceInfo);
  int NET_DVR_Login_V40(Pointer pLoginInfo, Pointer lpDeviceInfo);
  boolean  NET_DVR_Logout(int lUserID);
  boolean  NET_DVR_Logout_V30(int lUserID);
  int  NET_DVR_GetLastError();
  String   NET_DVR_GetErrorMsg(IntByReference pErrorNo);
- boolean  NET_DVR_SetShowMode(int dwShowType, int colorKey);
- boolean  NET_DVR_GetDVRIPByResolveSvr(String sServerIP, short wServerPort, String sDVRName, short wDVRNameLen, String sDVRSerialNumber, short wDVRSerialLen, String sGetIP);
- boolean   NET_DVR_GetDVRIPByResolveSvr_EX(String sServerIP, short wServerPort, String sDVRName, short wDVRNameLen, String sDVRSerialNumber, short wDVRSerialLen, String sGetIP, IntByReference dwPort);
+ boolean  NET_DVR_SetShowMode(int dwShowType,int colorKey);
+ boolean  NET_DVR_GetDVRIPByResolveSvr(String sServerIP, short wServerPort, String sDVRName,short wDVRNameLen,String sDVRSerialNumber,short wDVRSerialLen,String sGetIP);
+ boolean   NET_DVR_GetDVRIPByResolveSvr_EX(String sServerIP, short wServerPort,  String sDVRName, short wDVRNameLen, String sDVRSerialNumber, short wDVRSerialLen,String sGetIP, IntByReference dwPort);
 
 //预览相关接口
- int  NET_DVR_RealPlay(int lUserID, NET_DVR_CLIENTINFO lpClientInfo);
- int  NET_DVR_RealPlay_V30(int lUserID, NET_DVR_CLIENTINFO lpClientInfo, FRealDataCallBack_V30 fRealDataCallBack_V30, Pointer pUser, boolean bBlocked);
+ int  NET_DVR_RealPlay(int lUserID,NET_DVR_CLIENTINFO lpClientInfo);
+ int  NET_DVR_RealPlay_V30(int lUserID, NET_DVR_CLIENTINFO lpClientInfo, FRealDataCallBack_V30 fRealDataCallBack_V30, Pointer pUser , boolean bBlocked );
  boolean  NET_DVR_StopRealPlay(int lRealHandle);
- boolean  NET_DVR_RigisterDrawFun(int lRealHandle, FDrawFun fDrawFun, int dwUser);
- boolean  NET_DVR_SetPlayerBufNumber(int lRealHandle, int dwBufNum);
- boolean  NET_DVR_ThrowBFrame(int lRealHandle, int dwNum);
+ boolean  NET_DVR_RigisterDrawFun(int lRealHandle,FDrawFun fDrawFun,int dwUser);
+ boolean  NET_DVR_SetPlayerBufNumber(int lRealHandle,int dwBufNum);
+ boolean  NET_DVR_ThrowBFrame(int lRealHandle,int dwNum);
  boolean  NET_DVR_SetAudioMode(int dwMode);
  boolean  NET_DVR_OpenSound(int lRealHandle);
  boolean  NET_DVR_CloseSound();
  boolean  NET_DVR_OpenSoundShare(int lRealHandle);
  boolean  NET_DVR_CloseSoundShare(int lRealHandle);
- boolean  NET_DVR_Volume(int lRealHandle, short wVolume);
- boolean  NET_DVR_SaveRealData(int lRealHandle, String sFileName);
+ boolean  NET_DVR_Volume(int lRealHandle,short wVolume);
+ boolean  NET_DVR_SaveRealData(int lRealHandle,String sFileName);
  boolean  NET_DVR_StopSaveRealData(int lRealHandle);
- boolean  NET_DVR_SetRealDataCallBack(int lRealHandle, FRowDataCallBack fRealDataCallBack, int dwUser);
- boolean  NET_DVR_SetStandardDataCallBack(int lRealHandle, FStdDataCallBack fStdDataCallBack, int dwUser);
- boolean  NET_DVR_CapturePicture(int lRealHandle, String sPicFileName);//bmp
+ boolean  NET_DVR_SetRealDataCallBack(int lRealHandle,FRowDataCallBack fRealDataCallBack,int dwUser);
+ boolean  NET_DVR_SetStandardDataCallBack(int lRealHandle,FStdDataCallBack fStdDataCallBack,int dwUser);
+ boolean  NET_DVR_CapturePicture(int lRealHandle,String sPicFileName);//bmp
 
 //动态生成I帧
  boolean  NET_DVR_MakeKeyFrame(int lUserID, int lChannel);//主码流
  boolean  NET_DVR_MakeKeyFrameSub(int lUserID, int lChannel);//子码流
 
 //云台控制相关接口
- boolean  NET_DVR_PTZControl(int lRealHandle, int dwPTZCommand, int dwStop);
- boolean  NET_DVR_PTZControl_Other(int lUserID, int lChannel, int dwPTZCommand, int dwStop);
- boolean  NET_DVR_TransPTZ(int lRealHandle, String pPTZCodeBuf, int dwBufSize);
- boolean  NET_DVR_TransPTZ_Other(int lUserID, int lChannel, String pPTZCodeBuf, int dwBufSize);
- boolean  NET_DVR_PTZPreset(int lRealHandle, int dwPTZPresetCmd, int dwPresetIndex);
- boolean  NET_DVR_PTZPreset_Other(int lUserID, int lChannel, int dwPTZPresetCmd, int dwPresetIndex);
- boolean  NET_DVR_TransPTZ_EX(int lRealHandle, String pPTZCodeBuf, int dwBufSize);
- boolean  NET_DVR_PTZControl_EX(int lRealHandle, int dwPTZCommand, int dwStop);
- boolean  NET_DVR_PTZPreset_EX(int lRealHandle, int dwPTZPresetCmd, int dwPresetIndex);
- boolean  NET_DVR_PTZCruise(int lRealHandle, int dwPTZCruiseCmd, byte byCruiseRoute, byte byCruisePoint, short wInput);
- boolean  NET_DVR_PTZCruise_Other(int lUserID, int lChannel, int dwPTZCruiseCmd, byte byCruiseRoute, byte byCruisePoint, short wInput);
- boolean  NET_DVR_PTZCruise_EX(int lRealHandle, int dwPTZCruiseCmd, byte byCruiseRoute, byte byCruisePoint, short wInput);
+ boolean  NET_DVR_PTZControl(int lRealHandle,int dwPTZCommand,int dwStop);
+ boolean  NET_DVR_PTZControl_Other(int lUserID,int lChannel,int dwPTZCommand,int dwStop);
+ boolean  NET_DVR_TransPTZ(int lRealHandle,String pPTZCodeBuf,int dwBufSize);
+ boolean  NET_DVR_TransPTZ_Other(int lUserID,int lChannel,String pPTZCodeBuf,int dwBufSize);
+ boolean  NET_DVR_PTZPreset(int lRealHandle,int dwPTZPresetCmd,int dwPresetIndex);
+ boolean  NET_DVR_PTZPreset_Other(int lUserID,int lChannel,int dwPTZPresetCmd,int dwPresetIndex);
+ boolean  NET_DVR_TransPTZ_EX(int lRealHandle,String pPTZCodeBuf,int dwBufSize);
+ boolean  NET_DVR_PTZControl_EX(int lRealHandle,int dwPTZCommand,int dwStop);
+ boolean  NET_DVR_PTZPreset_EX(int lRealHandle,int dwPTZPresetCmd,int dwPresetIndex);
+ boolean  NET_DVR_PTZCruise(int lRealHandle,int dwPTZCruiseCmd,byte byCruiseRoute, byte byCruisePoint, short wInput);
+ boolean  NET_DVR_PTZCruise_Other(int lUserID,int lChannel,int dwPTZCruiseCmd,byte byCruiseRoute, byte byCruisePoint, short wInput);
+ boolean  NET_DVR_PTZCruise_EX(int lRealHandle,int dwPTZCruiseCmd,byte byCruiseRoute, byte byCruisePoint, short wInput);
  boolean  NET_DVR_PTZTrack(int lRealHandle, int dwPTZTrackCmd);
  boolean  NET_DVR_PTZTrack_Other(int lUserID, int lChannel, int dwPTZTrackCmd);
  boolean  NET_DVR_PTZTrack_EX(int lRealHandle, int dwPTZTrackCmd);
  boolean  NET_DVR_PTZControlWithSpeed(int lRealHandle, int dwPTZCommand, int dwStop, int dwSpeed);
  boolean  NET_DVR_PTZControlWithSpeed_Other(int lUserID, int lChannel, int dwPTZCommand, int dwStop, int dwSpeed);
  boolean  NET_DVR_PTZControlWithSpeed_EX(int lRealHandle, int dwPTZCommand, int dwStop, int dwSpeed);
- boolean  NET_DVR_GetPTZCruise(int lUserID, int lChannel, int lCruiseRoute, NET_DVR_CRUISE_RET lpCruiseRet);
- boolean  NET_DVR_PTZMltTrack(int lRealHandle, int dwPTZTrackCmd, int dwTrackIndex);
- boolean  NET_DVR_PTZMltTrack_Other(int lUserID, int lChannel, int dwPTZTrackCmd, int dwTrackIndex);
- boolean  NET_DVR_PTZMltTrack_EX(int lRealHandle, int dwPTZTrackCmd, int dwTrackIndex);
+ boolean  NET_DVR_GetPTZCruise(int lUserID,int lChannel,int lCruiseRoute, NET_DVR_CRUISE_RET lpCruiseRet);
+ boolean  NET_DVR_PTZMltTrack(int lRealHandle,int dwPTZTrackCmd, int dwTrackIndex);
+ boolean  NET_DVR_PTZMltTrack_Other(int lUserID,int lChannel,int dwPTZTrackCmd, int dwTrackIndex);
+ boolean  NET_DVR_PTZMltTrack_EX(int lRealHandle,int dwPTZTrackCmd, int dwTrackIndex);
 
 //文件查找与回放
- int  NET_DVR_FindFile(int lUserID, int lChannel, int dwFileType, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime);
- int  NET_DVR_FindNextFile(int lFindHandle, NET_DVR_FIND_DATA lpFindData);
+ int  NET_DVR_FindFile(int lUserID,int lChannel,int dwFileType, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime);
+ int  NET_DVR_FindNextFile(int lFindHandle,NET_DVR_FIND_DATA lpFindData);
  boolean  NET_DVR_FindClose(int lFindHandle);
  int  NET_DVR_FindNextFile_V30(int lFindHandle, NET_DVR_FINDDATA_V30 lpFindData);
  int  NET_DVR_FindFile_V30(int lUserID, NET_DVR_FILECOND pFindCond);
@@ -4817,17 +4817,17 @@ public static class BYTE_ARRAY extends Structure
  int  NET_DVR_FindFile_Card(int lUserID, int lChannel, int dwFileType, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime);
  boolean  NET_DVR_LockFileByName(int lUserID, String sLockFileName);
  boolean  NET_DVR_UnlockFileByName(int lUserID, String sUnlockFileName);
- int  NET_DVR_PlayBackByName(int lUserID, String sPlayBackFileName, HWND hWnd);
- int  NET_DVR_PlayBackByTime(int lUserID, int lChannel, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime, HWND hWnd);
- boolean  NET_DVR_PlayBackControl(int lPlayHandle, int dwControlCode, int dwInValue, IntByReference LPOutValue);
+ int  NET_DVR_PlayBackByName(int lUserID,String sPlayBackFileName, HWND hWnd);
+ int  NET_DVR_PlayBackByTime(int lUserID,int lChannel, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime, HWND hWnd);
+ boolean  NET_DVR_PlayBackControl(int lPlayHandle,int dwControlCode,int dwInValue,IntByReference LPOutValue);
  boolean  NET_DVR_StopPlayBack(int lPlayHandle);
- boolean  NET_DVR_SetPlayDataCallBack(int lPlayHandle, FPlayDataCallBack fPlayDataCallBack, int dwUser);
- boolean  NET_DVR_PlayBackSaveData(int lPlayHandle, String sFileName);
+ boolean  NET_DVR_SetPlayDataCallBack(int lPlayHandle,FPlayDataCallBack fPlayDataCallBack,int dwUser);
+ boolean  NET_DVR_PlayBackSaveData(int lPlayHandle,String sFileName);
  boolean  NET_DVR_StopPlayBackSave(int lPlayHandle);
  boolean  NET_DVR_GetPlayBackOsdTime(int lPlayHandle, NET_DVR_TIME lpOsdTime);
- boolean  NET_DVR_PlayBackCaptureFile(int lPlayHandle, String sFileName);
- int  NET_DVR_GetFileByName(int lUserID, String sDVRFileName, String sSavedFileName);
- int  NET_DVR_GetFileByTime(int lUserID, int lChannel, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime, String sSavedFileName);
+ boolean  NET_DVR_PlayBackCaptureFile(int lPlayHandle,String sFileName);
+ int  NET_DVR_GetFileByName(int lUserID,String sDVRFileName,String sSavedFileName);
+ int  NET_DVR_GetFileByTime(int lUserID,int lChannel, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime, String sSavedFileName);
  boolean  NET_DVR_StopGetFile(int lFileHandle);
  int  NET_DVR_GetDownloadPos(int lFileHandle);
  int	 NET_DVR_GetPlayBackPos(int lPlayHandle);
@@ -4839,8 +4839,8 @@ public static class BYTE_ARRAY extends Structure
  boolean  NET_DVR_CloseUpgradeHandle(int lUpgradeHandle);
  boolean  NET_DVR_SetNetworkEnvironment(int dwEnvironmentLevel);
 //远程格式化硬盘
- int  NET_DVR_FormatDisk(int lUserID, int lDiskNumber);
- boolean  NET_DVR_GetFormatProgress(int lFormatHandle, IntByReference pCurrentFormatDisk, IntByReference pCurrentDiskPos, IntByReference pFormatStatic);
+ int  NET_DVR_FormatDisk(int lUserID,int lDiskNumber);
+ boolean  NET_DVR_GetFormatProgress(int lFormatHandle, IntByReference pCurrentFormatDisk,IntByReference pCurrentDiskPos,IntByReference pFormatStatic);
  boolean  NET_DVR_CloseFormatHandle(int lFormatHandle);
 //报警
  int  NET_DVR_SetupAlarmChan(int lUserID);
@@ -4868,15 +4868,15 @@ public static class BYTE_ARRAY extends Structure
  boolean  NET_DVR_DelDVR_V30(int lVoiceHandle);
 ////////////////////////////////////////////////////////////
 //透明通道设置
- int  NET_DVR_SerialStart(int lUserID, int lSerialPort, FSerialDataCallBack fSerialDataCallBack, int dwUser);
+ int  NET_DVR_SerialStart(int lUserID,int lSerialPort,FSerialDataCallBack fSerialDataCallBack,int dwUser);
  
 public static interface FSerialDataCallBack_V40 extends Callback {
         public void invoke(int lSerialHandle, int lCHannel, byte[] pRecvDataBuffer, int dwBufSize, Pointer pUser);
 }
- int  NET_DVR_SerialStart_V40(int lUserID, Pointer lpInBuffer, int dwInBufferSize, FSerialDataCallBack_V40 fSerialDataCallBack_V40, Pointer pUser);
+ int  NET_DVR_SerialStart_V40(int lUserID, Pointer lpInBuffer, int dwInBufferSize, FSerialDataCallBack_V40 fSerialDataCallBack_V40,Pointer pUser);
 
 //485作为透明通道时，需要指明通道号，因为不同通道号485的设置可以不同(比如波特率)
- boolean  NET_DVR_SerialSend(int lSerialHandle, int lChannel, byte[] pSendBuf, int dwBufSize);
+ boolean  NET_DVR_SerialSend(int lSerialHandle, int lChannel, byte[] pSendBuf,int dwBufSize);
  boolean  NET_DVR_SerialStop(int lSerialHandle);
  boolean  NET_DVR_SendTo232Port(int lUserID, String pSendBuf, int dwBufSize);
  boolean  NET_DVR_SendToSerialPort(int lUserID, int dwSerialPort, int dwSerialIndex, String pSendBuf, int dwBufSize);
@@ -4887,49 +4887,49 @@ public static interface FSerialDataCallBack_V40 extends Callback {
  boolean  NET_DVR_DecodeG722Frame(Pointer pDecHandle, String pInBuffer, String pOutBuffer);
 //编码
  Pointer  NET_DVR_InitG722Encoder();
- boolean  NET_DVR_EncodeG722Frame(Pointer pEncodeHandle, String pInBuff, String pOutBuffer);
+ boolean  NET_DVR_EncodeG722Frame(Pointer pEncodeHandle,String pInBuff,String pOutBuffer);
  void  NET_DVR_ReleaseG722Encoder(Pointer pEncodeHandle);
 
 //远程控制本地显示
  boolean  NET_DVR_ClickKey(int lUserID, int lKeyIndex);
 //远程控制设备端手动录像
- boolean  NET_DVR_StartDVRRecord(int lUserID, int lChannel, int lRecordType);
- boolean  NET_DVR_StopDVRRecord(int lUserID, int lChannel);
+ boolean  NET_DVR_StartDVRRecord(int lUserID,int lChannel,int lRecordType);
+ boolean  NET_DVR_StopDVRRecord(int lUserID,int lChannel);
 //解码卡
  boolean  NET_DVR_InitDevice_Card(IntByReference pDeviceTotalChan);
  boolean  NET_DVR_ReleaseDevice_Card();
- boolean  NET_DVR_InitDDraw_Card(int hParent, int colorKey);
+ boolean  NET_DVR_InitDDraw_Card(int hParent,int colorKey);
  boolean  NET_DVR_ReleaseDDraw_Card();
- int  NET_DVR_RealPlay_Card(int lUserID, NET_DVR_CARDINFO lpCardInfo, int lChannelNum);
- boolean  NET_DVR_ResetPara_Card(int lRealHandle, NET_DVR_DISPLAY_PARA lpDisplayPara);
+ int  NET_DVR_RealPlay_Card(int lUserID,NET_DVR_CARDINFO lpCardInfo,int lChannelNum);
+ boolean  NET_DVR_ResetPara_Card(int lRealHandle,NET_DVR_DISPLAY_PARA lpDisplayPara);
  boolean  NET_DVR_RefreshSurface_Card();
  boolean  NET_DVR_ClearSurface_Card();
  boolean  NET_DVR_RestoreSurface_Card();
  boolean  NET_DVR_OpenSound_Card(int lRealHandle);
  boolean  NET_DVR_CloseSound_Card(int lRealHandle);
- boolean  NET_DVR_SetVolume_Card(int lRealHandle, short wVolume);
- boolean  NET_DVR_AudioPreview_Card(int lRealHandle, boolean bEnable);
+ boolean  NET_DVR_SetVolume_Card(int lRealHandle,short wVolume);
+ boolean  NET_DVR_AudioPreview_Card(int lRealHandle,boolean bEnable);
  int  NET_DVR_GetCardLastError_Card();
  Pointer  NET_DVR_GetChanHandle_Card(int lRealHandle);
  boolean  NET_DVR_CapturePicture_Card(int lRealHandle, String sPicFileName);
 //获取解码卡序列号此接口无效，改用GetBoardDetail接口获得(2005-12-08支持)
- boolean  NET_DVR_GetSerialNum_Card(int lChannelNum, IntByReference pDeviceSerialNo);
+ boolean  NET_DVR_GetSerialNum_Card(int lChannelNum,IntByReference pDeviceSerialNo);
 //日志
- int  NET_DVR_FindDVRLog(int lUserID, int lSelectMode, int dwMajorType, int dwMinorType, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime);
+ int  NET_DVR_FindDVRLog(int lUserID, int lSelectMode, int dwMajorType,int dwMinorType, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime);
  int  NET_DVR_FindNextLog(int lLogHandle, NET_DVR_LOG lpLogData);
  boolean  NET_DVR_FindLogClose(int lLogHandle);
- int  NET_DVR_FindDVRLog_V30(int lUserID, int lSelectMode, int dwMajorType, int dwMinorType, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime, boolean bOnlySmart);
+ int  NET_DVR_FindDVRLog_V30(int lUserID, int lSelectMode, int dwMajorType,int dwMinorType, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime, boolean bOnlySmart );
  int  NET_DVR_FindNextLog_V30(int lLogHandle, NET_DVR_LOG_V30 lpLogData);
  boolean  NET_DVR_FindLogClose_V30(int lLogHandle);
 //截止2004年8月5日,共113个接口
 //ATM DVR
- int  NET_DVR_FindFileByCard(int lUserID, int lChannel, int dwFileType, int nFindType, String sCardNumber, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime);
+ int  NET_DVR_FindFileByCard(int lUserID,int lChannel,int dwFileType, int nFindType, String sCardNumber, NET_DVR_TIME lpStartTime, NET_DVR_TIME lpStopTime);
 //截止2004年10月5日,共116个接口
 
 //2005-09-15
  boolean  NET_DVR_CaptureJPEGPicture(int lUserID, int lChannel, NET_DVR_JPEGPARA lpJpegPara, String sPicFileName);
 //JPEG抓图到内存
- boolean  NET_DVR_CaptureJPEGPicture_NEW(int lUserID, int lChannel, NET_DVR_JPEGPARA lpJpegPara, String sJpegPicBuffer, int dwPicSize, IntByReference lpSizeReturned);
+ boolean  NET_DVR_CaptureJPEGPicture_NEW(int lUserID, int lChannel, NET_DVR_JPEGPARA lpJpegPara, String sJpegPicBuffer, int dwPicSize,  IntByReference lpSizeReturned);
 
 
 //2006-02-16
@@ -4963,7 +4963,7 @@ public static interface FSerialDataCallBack_V40 extends Callback {
  boolean  NET_DVR_GetDecInfo(int lUserID, int lChannel, NET_DVR_DECCFG lpDecoderinfo);
  boolean  NET_DVR_SetDecTransPort(int lUserID, NET_DVR_PORTCFG lpTransPort);
  boolean  NET_DVR_GetDecTransPort(int lUserID, NET_DVR_PORTCFG lpTransPort);
- boolean  NET_DVR_DecPlayBackCtrl(int lUserID, int lChannel, int dwControlCode, int dwInValue, IntByReference LPOutValue, NET_DVR_PLAYREMOTEFILE lpRemoteFileInfo);
+ boolean  NET_DVR_DecPlayBackCtrl(int lUserID, int lChannel, int dwControlCode, int dwInValue,IntByReference LPOutValue, NET_DVR_PLAYREMOTEFILE lpRemoteFileInfo);
  boolean  NET_DVR_StartDecSpecialCon(int lUserID, int lChannel, NET_DVR_DECCHANINFO lpDecChanInfo);
  boolean  NET_DVR_StopDecSpecialCon(int lUserID, int lChannel, NET_DVR_DECCHANINFO lpDecChanInfo);
  boolean  NET_DVR_DecCtrlDec(int lUserID, int lChannel, int dwControlCode);
@@ -5000,10 +5000,10 @@ public static interface FSerialDataCallBack_V40 extends Callback {
 //关闭DVR
  boolean  NET_DVR_ShutDownDVR(int lUserID);
 //参数配置 begin
- boolean  NET_DVR_GetDeviceConfig(int lUserID, int dwCommand, int dwCount, Pointer lpInBuffer, int dwInBufferSize, Pointer lpStatusList, Pointer lpOutBuffer, int dwOutBufferSize);
- boolean  NET_DVR_SetDeviceConfig(int lUserID, int dwCommand, int dwCount, Pointer lpInBuffer, int dwInBufferSize, Pointer lpStatusList, Pointer lpInParamBuffer, int dwInParamBufferSize);
- boolean  NET_DVR_GetDVRConfig(int lUserID, int dwCommand, int lChannel, Pointer lpOutBuffer, int dwOutBufferSize, IntByReference lpBytesReturned);
- boolean  NET_DVR_SetDVRConfig(int lUserID, int dwCommand, int lChannel, Pointer lpInBuffer, int dwInBufferSize);
+ boolean  NET_DVR_GetDeviceConfig(int lUserID, int dwCommand,int dwCount, Pointer lpInBuffer, int dwInBufferSize, Pointer lpStatusList,Pointer lpOutBuffer, int dwOutBufferSize);
+ boolean  NET_DVR_SetDeviceConfig(int lUserID, int dwCommand,int dwCount, Pointer lpInBuffer, int dwInBufferSize, Pointer lpStatusList,Pointer lpInParamBuffer, int dwInParamBufferSize);
+ boolean  NET_DVR_GetDVRConfig(int lUserID, int dwCommand,int lChannel, Pointer lpOutBuffer, int dwOutBufferSize, IntByReference lpBytesReturned);
+ boolean  NET_DVR_SetDVRConfig(int lUserID, int dwCommand,int lChannel, Pointer lpInBuffer, int dwInBufferSize);
  boolean  NET_DVR_GetSTDConfig(int lUserID, int dwCommand, NET_DVR_STD_CONFIG lpConfigParam);
  boolean  NET_DVR_SetSTDConfig(int lUserID, int dwCommand, NET_DVR_STD_CONFIG lpConfigParam);
  boolean  NET_DVR_GetDVRWorkState_V30(int lUserID, NET_DVR_WORKSTATE_V30 lpWorkState);
@@ -5016,11 +5016,11 @@ public static interface FSerialDataCallBack_V40 extends Callback {
  boolean  NET_DVR_ClientSetframeformat_V30(int lUserID, NET_DVR_FRAMEFORMAT_V30 lpFrameFormat);
  boolean  NET_DVR_GetAlarmOut_V30(int lUserID, NET_DVR_ALARMOUTSTATUS_V30 lpAlarmOutState);
  boolean  NET_DVR_GetAlarmOut(int lUserID, NET_DVR_ALARMOUTSTATUS lpAlarmOutState);
- boolean  NET_DVR_SetAlarmOut(int lUserID, int lAlarmOutPort, int lAlarmOutStatic);
+ boolean  NET_DVR_SetAlarmOut(int lUserID, int lAlarmOutPort,int lAlarmOutStatic);
 
 //视频参数调节
- boolean  NET_DVR_ClientSetVideoEffect(int lRealHandle, int dwBrightValue, int dwContrastValue, int dwSaturationValue, int dwHueValue);
- boolean  NET_DVR_ClientGetVideoEffect(int lRealHandle, IntByReference pBrightValue, IntByReference pContrastValue, IntByReference pSaturationValue, IntByReference pHueValue);
+ boolean  NET_DVR_ClientSetVideoEffect(int lRealHandle,int dwBrightValue,int dwContrastValue, int dwSaturationValue,int dwHueValue);
+ boolean  NET_DVR_ClientGetVideoEffect(int lRealHandle,IntByReference pBrightValue,IntByReference pContrastValue, IntByReference pSaturationValue,IntByReference pHueValue);
 
 //配置文件
  boolean  NET_DVR_GetConfigFile(int lUserID, String sFileName);
@@ -5031,16 +5031,16 @@ public static interface FSerialDataCallBack_V40 extends Callback {
  boolean  NET_DVR_SetConfigFile_EX(int lUserID, String sInBuffer, int dwInSize);
 
 //启用日志文件写入接口
- boolean  NET_DVR_SetLogToFile(int bLogEnable, String strLogDir, boolean bAutoDel);
- boolean  NET_DVR_GetSDKState(NET_DVR_SDKSTATE pSDKState);
- boolean  NET_DVR_GetSDKAbility(NET_DVR_SDKABL pSDKAbl);
- boolean  NET_DVR_GetPTZProtocol(int lUserID, NET_DVR_PTZCFG pPtzcfg);
+ boolean  NET_DVR_SetLogToFile(int bLogEnable , String  strLogDir, boolean bAutoDel );
+ boolean  NET_DVR_GetSDKState( NET_DVR_SDKSTATE pSDKState);
+ boolean  NET_DVR_GetSDKAbility( NET_DVR_SDKABL pSDKAbl);
+ boolean  NET_DVR_GetPTZProtocol(int lUserID, NET_DVR_PTZCFG  pPtzcfg);
 //前面板锁定
  boolean  NET_DVR_LockPanel(int lUserID);
  boolean  NET_DVR_UnLockPanel(int lUserID);
 
- boolean  NET_DVR_SetRtspConfig(int lUserID, int dwCommand, NET_DVR_RTSPCFG lpInBuffer, int dwInBufferSize);
- boolean  NET_DVR_GetRtspConfig(int lUserID, int dwCommand, NET_DVR_RTSPCFG lpOutBuffer, int dwOutBufferSize);
+ boolean  NET_DVR_SetRtspConfig(int lUserID, int dwCommand,  NET_DVR_RTSPCFG lpInBuffer, int dwInBufferSize);
+ boolean  NET_DVR_GetRtspConfig(int lUserID, int dwCommand,  NET_DVR_RTSPCFG lpOutBuffer, int dwOutBufferSize);
 
  boolean  NET_DVR_ContinuousShoot(int lUserID, NET_DVR_SNAPCFG lpInter);
 
@@ -5048,9 +5048,9 @@ public static interface FSerialDataCallBack_V40 extends Callback {
   public void invoke(int dwType, Pointer lpBuffer, int dwBufLen, Pointer pUserData);
  }
 
-int NET_DVR_StartRemoteConfig(int lUserID, int dwCommand, Pointer lpInBuffer, int dwInBufferLen, FRemoteConfigCallback cbStateCallback, Pointer pUserData);
+int NET_DVR_StartRemoteConfig (int lUserID, int dwCommand, Pointer lpInBuffer, int dwInBufferLen, FRemoteConfigCallback cbStateCallback, Pointer pUserData);
 boolean  NET_DVR_SendRemoteConfig(int lHandle, int dwDataType, Pointer pSendBuf, int dwBufSize);
-int NET_DVR_GetNextRemoteConfig(int lHandle, Pointer lpOutBuff, int dwOutBuffSize);
+int NET_DVR_GetNextRemoteConfig (int lHandle, Pointer lpOutBuff, int dwOutBuffSize);
 boolean NET_DVR_StopRemoteConfig(int lHandle);
 boolean NET_DVR_RemoteControl(int lUserID, int dwCommand, Pointer lpInBuffer, int dwInBufferSize);
 
@@ -5063,7 +5063,7 @@ boolean NET_DVR_GetUploadResult(NativeLong lUploadHandle, Pointer lpOutBuffer, i
 boolean NET_DVR_UploadClose(NativeLong lUploadHandle);
 
 
-boolean  NET_DVR_GetSTDAbility(int lUserID, int dwAbilityType, NET_DVR_STD_ABILITY lpAbilityParam);
+boolean  NET_DVR_GetSTDAbility(int lUserID, int dwAbilityType, NET_DVR_STD_ABILITY  lpAbilityParam);
 boolean  NET_DVR_GetDeviceAbility(int lUserID, int dwAbilityType, Pointer pInBuf, int dwInLength, Pointer pOutBuf, int dwOutLength);
 boolean NET_DVR_ControlGateway(int lUserID, int lGatewayIndex, int dwStaic);
 

@@ -1,12 +1,5 @@
 package com.uppermac.utils;
 
-import java.io.ByteArrayOutputStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
@@ -24,6 +17,13 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.CoreConnectionPNames;
 import org.apache.http.util.CharsetUtils;
 import org.apache.http.util.EntityUtils;
+
+import java.io.ByteArrayOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class HttpUtil {
 
@@ -92,7 +92,7 @@ public class HttpUtil {
 	}
 
 	public static ThirdResponseObj http2Se(String url, StringEntity entity, String encodingType)
-			throws MyErrorException {
+			throws Exception {
 
 		try {
 			HttpClient httpClient = new SSLClient();
@@ -114,9 +114,9 @@ public class HttpUtil {
 			}
 			return responseObj;
 		} catch (Exception e) {
-			throw new MyErrorException("连接"+url+"异常");
+			throw new Exception("连接"+url+"异常");
 		}
-		
+
 	}
 
 	private static final ContentType CONTENT_TYPE_APPLICATION_FORM_URLENCODED = ContentType

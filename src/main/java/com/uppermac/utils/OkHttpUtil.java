@@ -1,28 +1,14 @@
 package com.uppermac.utils;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Iterator;
-import java.util.Map;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import okhttp3.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.uppermac.data.Constants;
-import com.uppermac.service.TowerInforService;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.FormBody;
-import okhttp3.MediaType;
-import okhttp3.MultipartBody;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
+import java.io.File;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Map;
 
 @Component
 public class OkHttpUtil {
@@ -40,16 +26,13 @@ public class OkHttpUtil {
 	
 	private OkHttpClient okHttpClient = new OkHttpClient();
 
-	protected MyLog logger = new MyLog(OkHttpUtil.class);	 
+	protected MyLog logger = new MyLog(OkHttpUtil.class);
 	/**
      * get(同步)
      *
      * @param url 请求的url
      * @return
      */
-	
-	@Autowired
-	private TowerInforService towerInforService;
 	
 
     public String get(String url) throws Exception {
@@ -70,7 +53,6 @@ public class OkHttpUtil {
             }
         } catch (Throwable throwable) {
         	logger.requestError(url, "网络异常");
-        	String keysign = towerInforService.findOrgId()+towerInforService.findPospCode()+towerInforService.findKey();
         	//logger.sendErrorLog(orgCode, "连接"+url+"网络异常", "","网络错误", Constants.errorLogUrl,keysign);
         } finally {
             if (response != null) {
@@ -108,7 +90,6 @@ public class OkHttpUtil {
 			}
 		} catch (Throwable throwable) {
 			logger.requestError(url, "网络异常");
-			String keysign = towerInforService.findOrgId()+towerInforService.findPospCode()+towerInforService.findKey();
 			//logger.sendErrorLog(orgCode,"连接"+url+"网络异常", "","网络错误", Constants.errorLogUrl,keysign);
 		} finally {
 			if (response != null) {
@@ -145,7 +126,6 @@ public class OkHttpUtil {
 				return response.body().string();
 			}
 		} catch (Throwable throwable) {
-			String keysign = towerInforService.findOrgId()+towerInforService.findPospCode()+towerInforService.findKey();
 			//logger.sendErrorLog(orgCode, "连接"+url+"网络异常", "","网络错误", Constants.errorLogUrl,keysign);
 			logger.requestError(url, "网络异常");
 		} finally {
@@ -180,7 +160,6 @@ public class OkHttpUtil {
 			}
 		} catch (Throwable throwable) {
 			logger.requestError(url, "网络异常");
-			String keysign = towerInforService.findOrgId()+towerInforService.findPospCode()+towerInforService.findKey();
 			//logger.sendErrorLog(orgCode, "连接"+url+"网络异常", "","网络错误", Constants.errorLogUrl,keysign);
 		} finally {
 			if (response != null) {
@@ -281,11 +260,5 @@ public class OkHttpUtil {
 		}
 		return responseBody;
 	}
-	
-	
-	public void sys() {
-		// TODO Auto-generated method stub
-		System.out.println(towerInforService.findKey());
-	}
-	
+
 }
