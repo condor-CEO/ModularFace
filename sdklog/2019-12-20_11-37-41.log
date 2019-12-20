@@ -1,0 +1,24 @@
+Begin Time:2019-12-20 11:37:41.481
+[2019-12-20 11:37:41.481][P:13796/T:4820][AVNetSDKMgr.cpp:358][Info][0] Load avnetsdk library dynamically
+[2019-12-20 11:37:41.504][P:13796/T:4820][AVNetSDKMgr.cpp:382][Info][0] avnetsdk module handle: 000000001F500000
+
+[2019-12-20 11:37:41.504][P:13796/T:4820][AVNetSDKMgr.cpp:702][Info][0] Load configsdk dynamically
+[2019-12-20 11:37:41.526][P:13796/T:4820][dhnetsdk.cpp:186][Info][0] Enter CLIENT_SetAutoReconnect:[cbAutoConnect=0000000002D00050, dwUser=0000000000000000].
+[2019-12-20 11:37:41.526][P:13796/T:4820][dhnetsdk.cpp:188][Info][0] Leave CLIENT_SetAutoReconnect.
+[2019-12-20 11:37:41.527][P:13796/T:4820][dhnetsdk.cpp:206][Info][0] Enter CLIENT_SetConnectTime:[nWaitTime=5000, nTryTimes=1].
+[2019-12-20 11:37:41.527][P:13796/T:4820][dhnetsdk.cpp:219][Info][0] Leave CLIENT_SetConnectTime.
+[2019-12-20 11:37:41.529][P:13796/T:4820][dhnetsdk.cpp:230][Info][0] Enter CLIENT_SetNetworkParam:[nWaittime=0, nConnectTime=10000, nConnectTryNum=0, nSubConnectSpaceTime=0, nGetDevInfoTime=0, nConnectBufSize=0, nGetConnInfoTime=3000, nSearchRecordTime=0, nsubDisconnetTime=0, byNetType=0, byPlaybackBufSize=0, bDetectDisconnTime=0, bKeepLifeInterval=0, nPicBufSize=0].
+[2019-12-20 11:37:41.529][P:13796/T:4820][dhnetsdk.cpp:245][Info][0] Leave CLIENT_SetNetworkParam.
+[2019-12-20 11:37:41.535][P:13796/T:4820][dhnetsdk.cpp:582][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.0.222, port=37777, SpeCap=0, lpDeviceInfo=000000001B6DDCF0.]
+[2019-12-20 11:37:43.716][P:13796/T:4820][DevConfig.cpp:2282][Error][90002001] Protocol error it may result from network timeout
+[2019-12-20 11:37:44.217][P:13796/T:4820][DevConfig.cpp:2282][Error][90002001] Protocol error it may result from network timeout
+[2019-12-20 11:37:45.218][P:13796/T:4820][DevConfig.cpp:2282][Error][90002001] Protocol error it may result from network timeout
+[2019-12-20 11:37:45.231][P:13796/T:4820][Manager.cpp:11070][Error][90000003] Failed to GetDevFunctionInfo ABILITY_DEVALL_INFO, iResult= 0x80000002
+[2019-12-20 11:37:45.232][P:13796/T:4820][dhnetsdk.cpp:618][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=493256032.]
+[2019-12-20 11:37:45.271][P:13796/T:4820][dhnetsdk.cpp:6517][Info][0] Enter CLIENT_ControlDevice. [lLoginID=493256032, type=256, param=000000001B6D7D60, waittime=5000.]
+[2019-12-20 11:37:50.789][P:13796/T:4820][dhnetsdk.cpp:6540][Info][0] Leave CLIENT_ControlDevice.[ret=1.]
+[2019-12-20 11:37:52.155][P:13796/T:4820][dhnetsdk.cpp:24962][Info][0] Enter CLIENT_FaceInfoOpreate. [lLoginID=493256032, emType=0, pInParam=0000000020C4E3B0, pOutParam=000000001B6DDA20, waittime=5000.]
+[2019-12-20 11:37:52.998][P:13796/T:4820][dhnetsdk.cpp:24978][Info][0] Leave CLIENT_FaceInfoOpreate.[ret=1.]
+[2019-12-20 11:37:53.003][P:13796/T:4820][dhnetsdk.cpp:811][Info][0] Enter CLIENT_Logout. [lLoginID=493256032.]
+[2019-12-20 11:37:53.004][P:13796/T:4820][TPTCPClient.cpp:514][Error][90010007] Device is not online, ip:192.168.0.222
+[2019-12-20 11:37:53.005][P:13796/T:4820][dhnetsdk.cpp:833][Info][0] Leave CLIENT_Logout. [ret=1]

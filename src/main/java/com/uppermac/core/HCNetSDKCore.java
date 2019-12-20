@@ -6,8 +6,8 @@ import com.sun.jna.ptr.IntByReference;
 import com.uppermac.config.HCNetSDK;
 import com.uppermac.data.Constant;
 import com.uppermac.utils.MyLog;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
@@ -19,7 +19,7 @@ import java.util.Map;
 @Service
 public class HCNetSDKCore {
 
-	private static Logger log = LoggerFactory.getLogger(HCNetSDKCore.class);
+	private static Logger log = Logger.getLogger(HCNetSDKCore.class);
 
 	/**
 	 * lUserID 用户句柄 dwEmployeeNo 用户工号 name 用户名字
@@ -41,7 +41,7 @@ public class HCNetSDKCore {
 
 
 	static {
-
+		BasicConfigurator.configure();
 		//System.load("/usr/apache-java-jar/lib/libHCCore.so");
 		//System.load("/usr/apache-java-jar/lib/libhpr.so");
 		//System.load("/usr/apache-java-jar/lib/libhcnetsdk.so");
@@ -150,7 +150,7 @@ public class HCNetSDKCore {
 		struCardInfo.bySchedulePlanType = 2;
 		struCardInfo.wDepartmentNo = 1;
 
-		byte[] strCardName = name.getBytes("GBK");
+		byte[] strCardName = AccordingToName(name).getBytes("GBK");
 		for (int i = 0; i < HCNetSDK.NAME_LEN; i++) {
 			struCardInfo.byName[i] = 0;
 		}
@@ -183,6 +183,27 @@ public class HCNetSDKCore {
 		return true;
 	}
 
+	//姓名隐藏
+	private static String AccordingToName(String username) {
+		StringBuffer name = null;
+		if (username.length() >= 2 || username.length() <= 3) {
+			name = new StringBuffer(username);
+			//创建StringBuffer对象strb
+			name.setCharAt(1, '*');    //修改指定位置的字符
+			//输出strb 的长度
+			name.setLength(6);      //设置字符串长度，超出部分会被裁剪
+		}
+		if (username.length() == 4) {
+			name = new StringBuffer(username);
+			//创建StringBuffer对象strb
+			name.setCharAt(1, '*');    //修改指定位置的字符
+			name.setCharAt(2, '*');    //修改指定位置的字符
+			//输出strb 的长度
+			name.setLength(6);
+		}
+		String str = new String(name);
+		return str;
+	}
 	/**
 	 *
 	 * strCardNo 人脸关联的卡号
@@ -266,6 +287,7 @@ public class HCNetSDKCore {
 		}
 		if (picdataLength < 0) {
 			System.out.println("input file dataSize < 0");
+			log.error("input file dataSize < 0");
 			logger.otherError("照片数据错误");
 			return false;
 		}
@@ -284,7 +306,7 @@ public class HCNetSDKCore {
 
 		struFaceInfo.write();
 		Pointer pSendBufSet = struFaceInfo.getPointer();
-		System.out.println(lHandle + "*" + pSendBufSet + "*" + 0x9 + "*" + struFaceInfo.size());
+		log.info(lHandle + "*" + pSendBufSet + "*" + 0x9 + "*" + struFaceInfo.size());
 		// ENUM_ACS_INTELLIGENT_IDENTITY_DATA = 9, //智能身份识别终端数据类型，下发人脸图片数据
 		if (!hCNetSDK.NET_DVR_SendRemoteConfig(lHandle, 0x9, pSendBufSet, struFaceInfo.size())) {
 
@@ -579,14 +601,14 @@ public class HCNetSDKCore {
 		IntByReference pInt = new IntByReference(0);
 		m_UploadStatus = hCNetSDK.NET_DVR_GetUploadState(m_lUploadHandle, pInt);
 		if (m_UploadStatus.longValue() == -1) {
-			System.out.println("NET_DVR_GetUploadState fail,error=" + hCNetSDK.NET_DVR_GetLastError());
+			log.error("NET_DVR_GetUploadState fail,error=" + hCNetSDK.NET_DVR_GetLastError());
 			logger.otherError("下发人脸及附加信息失败，错误号=" + hCNetSDK.NET_DVR_GetLastError());
 		} else if (m_UploadStatus.longValue() == 2) {
-			// System.out.println("is uploading!!!! progress = " + pInt.getValue());
+			 log.info("is uploading!!!! progress = " + pInt.getValue());
 		} else if (m_UploadStatus.longValue() == 1) {
-			logger.info("下发成功");
+			log.info("下发成功");
 		} else {
-			logger.otherError("下发失败，失败号=" + hCNetSDK.NET_DVR_GetLastError());
+			log.error("下发失败，失败号=" + hCNetSDK.NET_DVR_GetLastError());
 		}
 
 		return m_UploadStatus;

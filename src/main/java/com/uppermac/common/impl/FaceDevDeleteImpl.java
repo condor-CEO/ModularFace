@@ -1,19 +1,19 @@
 package com.uppermac.common.impl;
 
 
+import com.dhnetsdk.DHNetSDKCore;
 import com.uppermac.common.FaceDevDelete;
 import com.uppermac.core.FaceCore;
 import com.uppermac.core.HCNetSDKCore;
 import com.uppermac.data.Constant;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
 
 import java.util.Map;
 
 
 public class FaceDevDeleteImpl implements FaceDevDelete {
 
-    private static Logger logger = LoggerFactory.getLogger(FaceDevDeleteImpl.class);
+    private static Logger logger = Logger.getLogger(FaceDevDeleteImpl.class);
 
     /**
      *
@@ -28,6 +28,7 @@ public class FaceDevDeleteImpl implements FaceDevDelete {
      */
     @Override
     public Boolean faceDel(String deviceType, String deviceIP, Map<String,String> map) throws Exception {
+
         if (null == deviceType || "".equals(deviceType)) {
             logger.error("设备类型不能为空");
             return false;
@@ -40,21 +41,24 @@ public class FaceDevDeleteImpl implements FaceDevDelete {
             logger.error("参数不能为空");
             return false;
         }
-        FaceCore faceCore = new FaceCore();
 
         boolean isSuccess = true;
-        HCNetSDKCore hcNetSDKCore = new HCNetSDKCore();
         if (Constant.HJKey.equals(deviceType)) {
+            FaceCore faceCore = new FaceCore();
             //user.setCurrentStatus("normal");
-            isSuccess = faceCore.sendWhiteList(deviceIP, map, map.get(Constant.photo));
+            isSuccess = faceCore.sendWhiteListDelete(deviceIP, map, map.get(Constant.photo));
         }
         else if(Constant.HKGuardKey.equals(deviceType)){
+            HCNetSDKCore hcNetSDKCore = new HCNetSDKCore();
             //String strCardNo = "S"+user.getCompanyUserId();
             String strCardNo = "S"+map.get(Constant.companyUserId);
             isSuccess = hcNetSDKCore.setCardInfo(deviceIP, Integer.parseInt(map.get(Constant.companyUserId)),map.get(Constant.userName),strCardNo,"delete",map);
         }
         else if(Constant.HKCameraKey.equals(deviceType)){
+            HCNetSDKCore hcNetSDKCore = new HCNetSDKCore();
             isSuccess = hcNetSDKCore.delIPCpicture("staff", map.get(Constant.IdFrontImgUrl),map.get(Constant.deviceIp),map);
+        }else if(Constant.DHKey.equals(deviceType)){
+            isSuccess = DHNetSDKCore.deleteCard(map);
         }
         return isSuccess;
     }

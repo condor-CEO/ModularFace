@@ -12,6 +12,7 @@ public interface FaceDevDelete {
                     海景人脸删除条件参数:    设备IP地址、删除的用户姓名、
                     海康门禁删除条件参数:   设备ip、用户的工号、用户的姓名
                     海康摄像头删除条件参数: 人脸照片id
+                    大华删除条件参数:设备ip,用户名,密码,记录集编号
        @return
      * @throws Exception
      */

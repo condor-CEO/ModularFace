@@ -14,7 +14,7 @@ public class Constant {
     public static String DHKey = "DH-ASI728";               //大华设备
 
     public static String StaffPath ="StaffPath";		    //员工缓存照片路径
-    public static String HCPath =".\\libs\\库文件";		    //海康配置文件路径
+    public static String HCPath ="H:/usr/库文件";		    //海康配置文件路径
 
     //用户参数
     public static String userName = "userName";             //用户姓名

@@ -5,16 +5,17 @@ import com.dhnetsdk.DHNetSDKCore;
 import com.uppermac.common.FaceDevIssued;
 import com.uppermac.core.FaceCore;
 import com.uppermac.data.Constant;
+import com.uppermac.utils.Base64_2;
+import com.uppermac.utils.FilesUtils;
+import org.apache.log4j.Logger;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.Map;
 
 public class FaceDevIssuedImpl implements FaceDevIssued {
 
-    private static Logger logger = LoggerFactory.getLogger(FaceDevIssuedImpl.class);
+    private static Logger logger = Logger.getLogger(FaceDevIssuedImpl.class);
 
     /**
      * @param devicesType 设备型号
@@ -29,6 +30,7 @@ public class FaceDevIssuedImpl implements FaceDevIssued {
      */
     @Override
     public Boolean faceSend(String devicesType, String devicesIp, Map<String, String> map) throws Exception {
+
         if (null == devicesType || "".equals(devicesType)) {
             logger.error("设备类型不能为空");
             return false;
@@ -45,7 +47,10 @@ public class FaceDevIssuedImpl implements FaceDevIssued {
         boolean isSuccess = true;
         if (Constant.HJKey.equals(devicesType)) {
             FaceCore faceCore = new FaceCore();
-            isSuccess = faceCore.sendWhiteList(devicesIp, map, map.get(Constant.photo));
+            String photo = null;
+            File file = new File(map.get(Constant.photo));
+            photo = Base64_2.encode(FilesUtils.getBytesFromFile(file));
+            isSuccess = faceCore.sendWhiteList(devicesIp, map,photo);
 
         } else if (Constant.HKGuardKey.equals(devicesType)) {
             FaceCore faceCore = new FaceCore();
