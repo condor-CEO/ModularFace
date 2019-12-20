@@ -1,78 +1,400 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64a33dc8-a11f-4039-a9b3-d8e8b4301004" name="Default" comment="提交.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-20_11-10-11.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-20_11-14-20.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-20_11-27-22.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-20_11-28-23.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-20_11-29-20.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-20_11-37-17.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sdklog/2019-12-20_11-37-41.log" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lib/DHNetSDK.jar" afterPath="$PROJECT_DIR$/src/lib/DHNetSDK.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/TestDemo.class" afterPath="$PROJECT_DIR$/target/classes/com/TestDemo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/common/impl/FaceDevDeleteImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/uppermac/common/impl/FaceDevDeleteImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/common/impl/FaceDevIssuedImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/uppermac/common/impl/FaceDevIssuedImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/core/FaceCore.class" afterPath="$PROJECT_DIR$/target/classes/com/uppermac/core/FaceCore.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/core/HCNetSDKCore$FRemoteCfgCallBackCardSet.class" afterPath="$PROJECT_DIR$/target/classes/com/uppermac/core/HCNetSDKCore$FRemoteCfgCallBackCardSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/core/HCNetSDKCore$FRemoteCfgCallBackFaceSet.class" afterPath="$PROJECT_DIR$/target/classes/com/uppermac/core/HCNetSDKCore$FRemoteCfgCallBackFaceSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/core/HCNetSDKCore.class" afterPath="$PROJECT_DIR$/target/classes/com/uppermac/core/HCNetSDKCore.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/data/Constant.class" afterPath="$PROJECT_DIR$/target/classes/com/uppermac/data/Constant.class" />
+    <list default="true" id="64a33dc8-a11f-4039-a9b3-d8e8b4301004" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-12_15-02-22.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-12_15-02-47.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-12_15-11-15.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-12_15-20-39.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-12_15-22-40.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-12_15-24-16.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-12_15-27-09.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-12_15-27-52.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-12_15-30-06.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-19_17-57-57.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-19_18-04-22.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-20_11-10-11.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-20_11-14-20.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-20_11-27-22.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-20_11-28-23.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-20_11-29-20.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-20_11-37-17.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sdklog/2019-12-20_11-37-41.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/TestDemo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/common/FaceDevDelete.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/common/FaceDevIssued.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/common/impl/FaceDevDeleteImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/common/impl/FaceDevIssuedImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/GDI32.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$BYTE_ARRAY.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$CAPTURE_MODE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$CARDRIGHTPLAN.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$CARDRIGHTPLAN_WORD.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$DISPLAY_MODE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FColGlobalDataCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FColLocalDataCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FDrawFun.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FExceptionCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FJpegdataCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FLoginResultCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FMSGCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FMSGCallBack_V31.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FMessCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FMessCallBack_EX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FMessCallBack_NEW.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FMessageCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FPlayDataCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FPostMessageCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FRealDataCallBack_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FRemoteConfigCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FRowDataCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FSerialDataCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FSerialDataCallBack_V40.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FStdDataCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FVoiceDataCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FVoiceDataCallBack2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FVoiceDataCallBack_MR.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FVoiceDataCallBack_MR_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$FVoiceDataCallBack_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$GpsDataParamUion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVRRECEIVER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ACS_ALARM_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ACS_EVENT_CFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ACS_EVENT_COND.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ACS_EVENT_DETAIL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ACS_EVENT_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ADDIT_POSITION.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_AID_ALARM_V41.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_AID_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARMER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARMINCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARMINCFG_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARMINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARMINFO_EX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARMINFO_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARMINFO_V40.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARMOUTCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARMOUTCFG_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARMOUTSTATUS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARMOUTSTATUS_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARM_ISAPI_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALARM_ISAPI_PICDATA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ALRAM_FIXED_HEADER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_AREAINFOCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_AUXOUTCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_BARRIERGATE_CFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_BUILTIN_SUPPLEMENTLIGHT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CAPTURE_FACE_CFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CAPTURE_FACE_COND.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CARDINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CARD_CFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CARD_CFG_COND.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CARD_CFG_SEND_DATA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CARD_CFG_V50.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CHANNELSTATE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CHANNELSTATE_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CHANNEL_GROUP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CID_ALARM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CLIENTINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_COLOR.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_COMPRESSIONCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_COMPRESSIONCFG_EX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_COMPRESSIONCFG_NEW.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_COMPRESSIONCFG_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_COMPRESSION_AUDIO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_COMPRESSION_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_COMPRESSION_INFO_EX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_COMPRESSION_INFO_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CRUISECHAN_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CRUISE_PARA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CRUISE_POINT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_CRUISE_RET.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DATE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DAYTIME.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DDNS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DDNSPARA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DDNSPARA_EX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DDNSPARA_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECCHANINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECCHANSTATUS$objectInfo$fileInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECCHANSTATUS$objectInfo$timeInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECCHANSTATUS$objectInfo$userInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECCHANSTATUS$objectInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECCHANSTATUS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECODERCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECODERCFG_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECODERINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECODERSTATE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DECSTATUS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DEL_FACE_PARAM_MODE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DEVICECFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DEVICEINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DEVICEINFO_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DEVICEINFO_V40.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DIRECTION.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DISKSTATE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DISPLAY_PARA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DOOR_CFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_DOOR_STATUS_PLAN.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_EMAILCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_EMAILCFG_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_EMAILPARA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ETHERNET.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ETHERNET_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_EVENT_CARD_LINKAGE_CFG_V50.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_EVENT_CARD_LINKAGE_COND.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_EVENT_LINKAGE_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_EVENT_TRIGGER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_EVETN_CARD_LINKAGE_UNION.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_EXCEPTION.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_EXCEPTION_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FACELIB_COND.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FACELIB_GUARD_COND.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FACE_PARAM_BYCARD.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FACE_PARAM_BYREADER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FACE_PARAM_CFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FACE_PARAM_COND.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FACE_PARAM_CTRL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FACE_PARAM_STATUS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FILECOND.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FINDDATA_CARD.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FINDDATA_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FIND_DATA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FINGER_PRINT_CFG_V50.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FINGER_PRINT_INFO_COND_V50.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FINGER_PRINT_STATUS_V50.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FOCUSMODE_CFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FRAMEFORMAT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FRAMEFORMAT_EX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FRAMEFORMAT_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FRAMETYPECODE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_FTPTYPECODE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_GET_GPS_DATA_PARAM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_GPS_DATA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_GPS_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_HANDLEEXCEPTION.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_HANDLEEXCEPTION_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_HANDLEEXCEPTION_V40.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_HANDLEEXCEPTION_V41.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_HDCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_HDGROUP_CFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_HIDEALARM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_HIDEALARM_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ID_CARD_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ID_CARD_INFO_ALARM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_IPADDR.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_IPALARMINCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_IPALARMINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_IPALARMININFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_IPALARMOUTCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_IPALARMOUTINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_IPCHANINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_IPDEVINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_IPPARACFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_JPEGPARA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_LANE_PARAM_V41.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_LANE_QUEUE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_LOCAL_GENERAL_CFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_LOCAL_SDK_PATH.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_LOG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_LOG_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIXPARA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIXPARA_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_COLUMN_ELEMENT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_DECCHANINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_DECINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_DEC_CHAN_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_DEC_CHAN_STATUS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_DEC_REMOTE_PLAY.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_DEC_REMOTE_PLAY_CONTROL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_DEC_REMOTE_PLAY_STATUS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_DYNAMIC_DEC.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_GLOBAL_COLUMN_ELEMENT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_LOCAL_HOST_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_LOOP_DECINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_LOOP_PLAY_SET.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_PASSIVEMODE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_PREVIEW_DISP_CHAN.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_ROW_COLUMN_LINK.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_ROW_ELEMENT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_ROW_INDEX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_TRAN_CHAN_CONFIG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MATRIX_TRAN_CHAN_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MOTION.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_MOTION_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_NETAPPCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_NETCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_NETCFG_OTHER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_NETCFG_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_NFSCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_NTPPARA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PDC_ALRAM_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PICCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PICCFG_EX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PICCFG_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PLAN_TEMPLATE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PLATE_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PLATE_RESULT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PLAYREMOTEFILE$mode_size$bytime.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PLAYREMOTEFILE$mode_size.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PLAYREMOTEFILE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_POINT_FRAME.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PORTCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PORTINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PPPCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PPPCFG_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PPPOECFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PRESETCHAN_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PRESET_NAME.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PREVIEWCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PREVIEWCFG_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PTZCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PTZPOS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PTZSCOPE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PTZTRACKCHAN_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PTZ_POSITION.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_PTZ_PROTOCOL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_RECCOMPRESSIONCFG_EX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_RECORD.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_RECORDDAY.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_RECORDSCHED.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_RECORDSCHEDWEEK.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_RECORD_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_RS232CFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_RS232CFG_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_RTSPCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SCALECFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SCENE_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SCHEDTIME.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SCHEDTIMEWEEK.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SCHEDULE_DAYTIME.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SDKABL.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SDKSTATE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SENDER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SEND_PARAM_IN.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SERIALSTART_V40.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SETUPALARM_PARAM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SHELTER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SHOWSTRING.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SHOWSTRINGINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SHOWSTRING_EX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SHOWSTRING_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SIMPLE_DAYTIME.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SINGLE_HD.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SINGLE_HDGROUP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SINGLE_NFS.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SINGLE_PLAN_SEGMENT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SINGLE_PLAN_SEGMENT_WEEK.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SINGLE_RS232.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_SNAPCFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_STATFRAME.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_STATTIME.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_STD_ABILITY.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_STD_CONFIG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_STRING_POINTER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_TFS_ALARM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_TIME.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_TIMEPOINT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_TIME_EX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_TIME_SEGMENT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_TIME_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_TPS_ALARM_V41.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_TPS_INFO_V41.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_TPS_LANE_PARAM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_TPS_STATISTICS_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_TPS_STATISTICS_PARAM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_TRADEINFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_UPLOAD_FILE_RET.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_USER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_USER_EX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_USER_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_USER_INFO_EX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_USER_INFO_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_USER_LOGIN_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_USER_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_VALID_PERIOD_CFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_VEHICLE_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_VGAPARA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_VICOLOR.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_VIDEOOUT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_VIDEOOUT_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_VILOST.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_VILOST_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_VOOUT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_WEEK_PLAN_CFG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_WEEK_PLAN_COND.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_WORKSTATE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_WORKSTATE_V30.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_XML_CONFIG_INPUT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_XML_CONFIG_OUTPUT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_DVR_ZONEANDDST.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_ITS_PARK_VEHICLE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_ITS_PICTURE_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_ITS_PLATE_RESULT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_AREA.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_BLACKLIST_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_BLACKLIST_INFO_ALARM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_DEV_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_EVENT_UNION.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_FACESNAP_INFO_ALARM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_FACESNAP_MATCH_ALARM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_FACESNAP_RESULT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_FIELDDETECION.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_FILTER_STRATEGY.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_HUMAN_ATTRIBUTE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_HUMAN_FEATURE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_INTRUSION.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_LINE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_ONE_RULE_V42.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_POINT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_POLYGON.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_RECT.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_RULECFG_V42.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_RULE_ALARM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_RULE_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_RULE_TRIGGER_PARAM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_SIZE_FILTER.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_TARGET_INFO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_TRAVERSE_PLANE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$NET_VCA_TRAVERSE_PLANE_DETECTION.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$REALSOUND_MODE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$SEND_MODE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$TTY_CONFIG.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$TimePointParam.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$TimeSegParam.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$UNION_PDC_STATPARAM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$_SDK_NET_ENV.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$byte96.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$fGPSDataCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$struAlarmChannel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$struAlarmHardDisk.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$struIOAlarm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$struRecordingHost.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK$uStruAlarm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/HCNetSDK.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/PlayCtrl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/config/USER32.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/core/FaceCore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/core/HCNetSDKCore$FRemoteCfgCallBackCardSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/core/HCNetSDKCore$FRemoteCfgCallBackFaceSet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/core/HCNetSDKCore.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/data/Constant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/data/FaceDevResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/utils/Base64_2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/utils/FilesUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/utils/HttpUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/utils/MD5Util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/utils/MyLog$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/utils/MyLog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/utils/OkHttpUtil$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/utils/OkHttpUtil$OnNetworkListen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/utils/OkHttpUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/utils/SSLClient$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/utils/SSLClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/uppermac/utils/ThirdResponseObj.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/TestDemo.java" afterPath="$PROJECT_DIR$/src/main/java/com/TestDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/common/FaceDevDelete.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/common/FaceDevDelete.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/common/impl/FaceDevDeleteImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/common/impl/FaceDevDeleteImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/common/impl/FaceDevIssuedImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/common/impl/FaceDevIssuedImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/core/FaceCore.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/core/FaceCore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/core/HCNetSDKCore.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/core/HCNetSDKCore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/uppermac/data/Constant.java" afterPath="$PROJECT_DIR$/src/main/java/com/uppermac/data/Constant.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/AudioRender.dll" afterPath="$PROJECT_DIR$/libs/hcFile/AudioRender.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/ClientDemo.exe" afterPath="$PROJECT_DIR$/libs/hcFile/ClientDemo.exe" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/ClientDemoDll/ReadMe.txt" afterPath="$PROJECT_DIR$/libs/hcFile/ClientDemoDll/ReadMe.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/ClientDemoDll/calib.dll" afterPath="$PROJECT_DIR$/libs/hcFile/ClientDemoDll/calib.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/ClientDemoDll/iconv.dll" afterPath="$PROJECT_DIR$/libs/hcFile/ClientDemoDll/iconv.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/ClientDemoDll/libxml2.dll" afterPath="$PROJECT_DIR$/libs/hcFile/ClientDemoDll/libxml2.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/ClientDemoDll/zlib1.dll" afterPath="$PROJECT_DIR$/libs/hcFile/ClientDemoDll/zlib1.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/EagleEyeRender.dll" afterPath="$PROJECT_DIR$/libs/hcFile/EagleEyeRender.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/GdiPlus.dll" afterPath="$PROJECT_DIR$/libs/hcFile/GdiPlus.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/GdiPlus.lib" afterPath="$PROJECT_DIR$/libs/hcFile/GdiPlus.lib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCCore.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCCore.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCCore.lib" afterPath="$PROJECT_DIR$/libs/hcFile/HCCore.lib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDK.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDK.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDK.lib" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDK.lib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/AnalyzeData.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/AnalyzeData.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/AudioIntercom.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/AudioIntercom.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCAlarm.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/HCAlarm.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCAlarm.lib" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/HCAlarm.lib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCCoreDevCfg.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/HCCoreDevCfg.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCDisplay.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/HCDisplay.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCGeneralCfgMgr.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/HCGeneralCfgMgr.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCGeneralCfgMgr.lib" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/HCGeneralCfgMgr.lib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCIndustry.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/HCIndustry.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCPlayBack.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/HCPlayBack.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCPreview.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/HCPreview.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCPreview.lib" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/HCPreview.lib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/HCVoiceTalk.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/HCVoiceTalk.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/OpenAL32.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/OpenAL32.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/StreamTransClient.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/StreamTransClient.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/SystemTransform.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/SystemTransform.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HCNetSDKCom/libiconv2.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HCNetSDKCom/libiconv2.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/HXVA.dll" afterPath="$PROJECT_DIR$/libs/hcFile/HXVA.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/LocalXml.zip" afterPath="$PROJECT_DIR$/libs/hcFile/LocalXml.zip" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/MP_Render.dll" afterPath="$PROJECT_DIR$/libs/hcFile/MP_Render.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/NPQos.dll" afterPath="$PROJECT_DIR$/libs/hcFile/NPQos.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/PlayCtrl.dll" afterPath="$PROJECT_DIR$/libs/hcFile/PlayCtrl.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/PlayCtrl.lib" afterPath="$PROJECT_DIR$/libs/hcFile/PlayCtrl.lib" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/SuperRender.dll" afterPath="$PROJECT_DIR$/libs/hcFile/SuperRender.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/YUVProcess.dll" afterPath="$PROJECT_DIR$/libs/hcFile/YUVProcess.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/hlog.dll" afterPath="$PROJECT_DIR$/libs/hcFile/hlog.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/hpr.dll" afterPath="$PROJECT_DIR$/libs/hcFile/hpr.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/libeay32.dll" afterPath="$PROJECT_DIR$/libs/hcFile/libeay32.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/libmmd.dll" afterPath="$PROJECT_DIR$/libs/hcFile/libmmd.dll" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/log4cxx.properties" afterPath="$PROJECT_DIR$/libs/hcFile/log4cxx.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/libs/库文件/ssleay32.dll" afterPath="$PROJECT_DIR$/libs/hcFile/ssleay32.dll" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../photoIssued/target/" />
@@ -116,7 +438,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/uppermac/common/impl/FaceDevIssuedImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="912">
-              <caret line="56" column="36" lean-forward="true" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+              <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,7 +497,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/uppermac/common/impl/FaceDevDeleteImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="576">
-              <caret line="54" column="40" lean-forward="true" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+              <caret line="54" column="40" lean-forward="false" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -696,7 +1018,7 @@
       <workItem from="1576719815416" duration="1607000" />
       <workItem from="1576745337344" duration="3306000" />
       <workItem from="1576749082890" duration="2983000" />
-      <workItem from="1576805319074" duration="10774000" />
+      <workItem from="1576805319074" duration="11075000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <created>1576750894332</created>
@@ -705,7 +1027,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576750894332</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="提交.">
+      <created>1576826992010</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576826992010</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -741,7 +1070,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269595000" />
+    <option name="totallyTimeSpent" value="269896000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -754,7 +1083,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -770,7 +1098,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27912253" sideWeight="0.49344262" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27912253" sideWeight="0.49344262" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25113463" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -826,7 +1154,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交" />
+    <MESSAGE value="提交." />
+    <option name="LAST_COMMIT_MESSAGE" value="提交." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1037,8 +1366,8 @@
         <state relative-caret-position="79">
           <caret line="1119" column="20" lean-forward="true" selection-start-line="1119" selection-start-column="20" selection-end-line="1119" selection-end-column="20" />
           <folding>
-            <element signature="e#44970#44971#0" expanded="true" />
-            <element signature="e#45051#45052#0" expanded="true" />
+            <element signature="e#44970#44971#0" expanded="false" />
+            <element signature="e#45051#45052#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1070,7 +1399,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/uppermac/common/impl/FaceDevDeleteImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
-          <caret line="54" column="40" lean-forward="true" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+          <caret line="54" column="40" lean-forward="false" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1080,7 +1409,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/uppermac/common/impl/FaceDevIssuedImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
-          <caret line="56" column="36" lean-forward="true" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+          <caret line="56" column="36" lean-forward="false" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
